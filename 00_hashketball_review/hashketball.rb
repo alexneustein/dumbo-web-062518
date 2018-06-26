@@ -103,7 +103,8 @@ def game_hash
           blocks: 1,
           slam_dunks: 0
         },
-        { player_name: "Brendan Haywood",
+        {
+          player_name: "Brendan Haywood",
           number: 33,
           shoe: 15,
           points: 6,
@@ -120,5 +121,38 @@ end
 
 
 def num_points_scored(player_name)
-# TODO this method
+  # players_array = game_hash.values.map do |team_info|
+  #   team_info[:players]
+  # end.flatten
+
+  #
+  # found_player = players_array.find do |player|
+  #   # Checking for a condition
+  #   player[:player_name] == player_name
+  # end
+
+  # binding.pry
+
+  puts find_player(player_name)[:points]
+
+  # An iterator through the game_hash
+  # Go through all the players
+  # Find the player whose name is equal to player_name
+  # return the value of the points key
+
 end
+
+def players_array
+  game_hash.values.map do |team_info|
+    team_info[:players]
+  end.flatten
+end
+
+def find_player(player_name)
+  players_array.find do |player|
+    # Checking for a condition
+    player[:player_name] == player_name
+  end
+end
+
+num_points_scored("Brendan Haywood")
