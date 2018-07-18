@@ -1,0 +1,8 @@
+<h1>Creating a new Student</h1>
+
+<form action="/students/<%= @student.id %>" method="POST">
+  <input type="hidden" name="_method" value="PATCH"/>
+  <input type="text" value="<%= @student.name  %>" placeholder="Billy Bob" name="student[name]"/>
+  <input type="text" value="<%= @student.cohort.name %>" name="student[cohort_name]"/>
+  <input type="submit">
+</form>
