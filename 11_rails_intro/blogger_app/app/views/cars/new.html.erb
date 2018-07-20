@@ -1,0 +1,22 @@
+<%= form_for @car do |f| %>
+  <%= f.label :make %>
+  <%= f.text_field :make %>
+  <%= f.label :model %>
+  <%= f.text_field :model %>
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+  <%= f.label :year %>
+  <%= f.text_field :year %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+
+<!-- <form>
+  <input type="text" name="make" />
+  <input type="text" name="model" />
+  <input type="text" name="color" />
+  <input type="text" name="year" />
+  <input type="text" name="name" />
+  <input type="submit"/>
+</form> -->

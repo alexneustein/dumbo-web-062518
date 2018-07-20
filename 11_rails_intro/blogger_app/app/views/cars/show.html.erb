@@ -1,0 +1,5 @@
+<h2><%= @car.name %> <%= @car.year %></h2>
+
+<li> <%= @car.color %> <%= @car.make %> - <%= @car.model %></li>
+
+<%= link_to "DELETE", car_path(@car), method: :delete %>
