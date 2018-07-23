@@ -1,0 +1,11 @@
+<h2><%= "#{@store.name} - #{@store.location}" %></h2>
+<!-- If there are no pizzas, "no pizzas". If there are, show their names -->
+<% if !@store.pizzas.empty? %>
+  <ul>
+    <% @store.pizzas.each do |pizza| %>
+        <li><%= pizza.name %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <h1>YO THERE ARE NO PIZZAS. CREATE ONE.</h1>
+<% end %>

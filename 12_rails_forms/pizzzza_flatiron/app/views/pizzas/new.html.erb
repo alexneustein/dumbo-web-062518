@@ -1,0 +1,24 @@
+<%= form_tag controller: "pizzas", action: "create" do %>
+  <%= text_field_tag "pizza[name]" %>
+  <%= text_field_tag "pizza[pizza_type]" %>
+  <%= text_field_tag "pizza[price]" %>
+  <%#  %>
+  <%= collection_select :pizza, :store_id, Store.all, :id, :name %>
+  <%= submit_tag "Create a Pizza" %>
+<% end %>
+
+<% if @pizza.errors.any? %>
+  <% @pizza.errors.full_messages.each do |error| %>
+    <%= error %>
+  <% end %>
+<% end %>
+
+<%= form_for @pizza do |f| %>
+  <%= f.text_field :name, size: 20 %>
+  <%= f.text_field :pizza_type %>
+  <%= f.number_field :price, in: 1..10 %>
+  <%= f.collection_select :store_id, Store.all, :id, :name %>
+  <%= f.submit %>
+<% end %>
+
+<!-- <form></form> -->
