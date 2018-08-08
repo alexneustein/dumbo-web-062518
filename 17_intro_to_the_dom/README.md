@@ -30,6 +30,15 @@ API
 application programming interface
 
 
+- add button
+- button shows other decade
+- changes title
+- changes bands
+- changes button text
+
+
+
+
 
 
 
