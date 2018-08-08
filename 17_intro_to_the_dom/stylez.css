@@ -1,0 +1,36 @@
+body {
+  background-color: #FBFEFB;
+}
+
+img {
+  width: 300px;
+}
+
+li {
+  border: solid 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  padding: 15px;
+  margin: 10px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#band-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: pink;
+  border: dotted;
+  border-color: purple;
+  width: 75%;
+  list-style-type: none;
+  padding: 15px;
+}
+
