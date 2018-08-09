@@ -21,12 +21,9 @@ function afterWork(friend) {
 // es 5
 function Instructor(name, role, hobby) {
   // instance variables
-  let all = []
-  all.push(this)
   this.name = name
   this.role = role
   this.hobby = hobby
-  this.all = all
 }
 
 // instance method
