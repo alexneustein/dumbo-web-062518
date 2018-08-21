@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Taco:</strong>
+  <%= @taco_ingredient.taco_id %>
+</p>
+
+<p>
+  <strong>Ingredient:</strong>
+  <%= @taco_ingredient.ingredient_id %>
+</p>
+
+<%= link_to 'Edit', edit_taco_ingredient_path(@taco_ingredient) %> |
+<%= link_to 'Back', taco_ingredients_path %>

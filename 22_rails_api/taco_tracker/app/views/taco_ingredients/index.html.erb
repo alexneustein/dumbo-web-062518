@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Taco Ingredients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Taco</th>
+      <th>Ingredient</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @taco_ingredients.each do |taco_ingredient| %>
+      <tr>
+        <td><%= taco_ingredient.taco_id %></td>
+        <td><%= taco_ingredient.ingredient_id %></td>
+        <td><%= link_to 'Show', taco_ingredient %></td>
+        <td><%= link_to 'Edit', edit_taco_ingredient_path(taco_ingredient) %></td>
+        <td><%= link_to 'Destroy', taco_ingredient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Taco Ingredient', new_taco_ingredient_path %>

@@ -1,0 +1,2 @@
+module TacoIngredientsHelper
+end
