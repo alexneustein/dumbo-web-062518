@@ -5,6 +5,12 @@
 - See what a React Component actually is (an object, made by a class or function)
 - Build custom components and see initial JSX
 
+
+## JS Projects
+- structure
+- repetition of document selection
+- script src tags
+
 ## Exercises
 - write a function `myCreateElement`
 
