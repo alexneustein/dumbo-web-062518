@@ -7,7 +7,7 @@
       - `sub header`
   - `right menu`
     - `item`
-    - `ui button`
+      - `ui button`
 
 # semantic painting classes
 - `item`
