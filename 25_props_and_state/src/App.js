@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Navbar'
 import paintings from './paintings.js'
 import PaintingContainer from './PaintingContainer'
+import 'semantic-ui-css/semantic.min.css'
 
 class App extends React.Component {
   render() {
@@ -16,9 +17,4 @@ class App extends React.Component {
 }
 
 export default App;
-
-// App
-// - PaintingsContainer
-// - painting1
-// -painting2
 

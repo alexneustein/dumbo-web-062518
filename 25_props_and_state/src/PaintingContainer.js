@@ -9,7 +9,7 @@ export default class PaintingContainer extends React.Component{
   }
 
   render() {
-    console.log(this.props.paintings)
+    // console.log(this.props.paintings)
     return (
       <div>
         {this.mapPaintings()}
