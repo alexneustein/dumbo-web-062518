@@ -16,3 +16,4 @@
   - `middle aligned content`
     - `header`
     - `description`
+      - `large caret up icon`
