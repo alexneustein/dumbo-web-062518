@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const RandomKoala = (props) => {
+const RandomKoala = ({koala}) => {
 
-    return (
-      <div className="app-children">
-        A Koala
-      </div>
-    )
+  return (
+    <div className="app-children">
+      <img src={koala.image_url} alt=''/>
+    </div>
+  )
 }
 
 export default RandomKoala
