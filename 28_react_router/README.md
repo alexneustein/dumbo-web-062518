@@ -11,10 +11,13 @@
 
 ## Client-side Routing and SPA
 - why do we need routes
+  - user can navigate forward and back
+  - user can use URLs
   - get information about what client wants
-  - structure application
   - RESTful conventions
+  - structure application
 - drawbacks
+  - slower load time
   - react routes can be buried in the application
 
 ## Router
