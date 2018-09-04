@@ -27,13 +27,15 @@
 ## Route
 - conditionally renders a certain component based on string-matching the routes
 
+## Switch
+- picks one of the following routes (the first that matches)
+- ignores all routes after first match (like an if/ else if/ else if).
+
+
 ## Link
 - changes the url we see in the browser
 - must have a 'to' prop.
 
-## Switch
-- picks one of the following routes (the first that matches)
-- ignores all routes after first match (like an if/ else if/ else if).
 
 ## Redirect
 - forces a redirect to a particular route

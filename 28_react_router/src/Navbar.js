@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const colors = [
@@ -18,14 +19,12 @@ const colors = [
 ]
 
 export default class Navbar extends React.Component {
-  constructor(){
+  constructor() {
     super()
     this.state = {color: ''}
-    console.log('constructing navbar')
-    // this.handleClick = this.handleClick.bind(this)
+    // console.log('nav construct')
   }
 
-  // state = {color: ''}
 
   handleClick = (e) => {
     const i = Math.floor(Math.random() * colors.length)
@@ -35,21 +34,22 @@ export default class Navbar extends React.Component {
 
 
   render() {
-
-    // console.log(color)
+    // console.log('nav render')
     return (
       <div className={`ui inverted ${this.state.color} menu`}>
-        <div className='item'>
-          <h2 className='header'>
-            <i className='icon paint brush'></i>
-            <div className='content'>
-              Painterest App
-            </div>
-            <div className='sub header'>
-              An app for paintings
-            </div>
-          </h2>
-        </div>
+        <Link to='/'>
+          <div className='item'>
+            <h2 className='header'>
+              <i className='icon paint brush'></i>
+              <div className='content'>
+                Painterest App
+              </div>
+            </h2>
+          </div>
+          </Link>
+        <Link to='/about'>
+          <div className='item'>About</div>
+        </Link>
         <div className='right menu'>
           <div className='item'>
             <div className='ui button' onClick={this.handleClick}>Color Change</div>
@@ -59,5 +59,3 @@ export default class Navbar extends React.Component {
     )
   }
 }
-
-// export default Navbar
